@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'moscowhome';
+	src:  url('../fonts/MoscowHome/moscowhome_icon.eot?pzywbv');
+	src:  url('../fonts/MoscowHome/moscowhome_icon.eot?pzywbv#iefix') format('embedded-opentype'),
+		url('../fonts/MoscowHome/moscowhome_icon.ttf?pzywbv') format('truetype'),
+		url('../fonts/MoscowHome/moscowhome_icon.woff?pzywbv') format('woff'),
+		url('../fonts/MoscowHome/moscowhome_icon.svg?pzywbv#moscowhome_icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamPro';
+	src:url('../fonts/GothamPro/GothamProRegular.eot?slbepq');
+	src:url('../fonts/GothamPro/GothamProRegular.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro/GothamProRegular.ttf') format('truetype'),
+		url('../fonts/GothamPro/GothamProRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamPro';
+	src:url('../fonts/GothamPro/GothamProBlack.eot?slbepq');
+	src:url('../fonts/GothamPro/GothamProBlack.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro/GothamProBlack.ttf') format('truetype'),
+		url('../fonts/GothamPro/GothamProBlack.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamPro';
+	src:url('../fonts/GothamPro/GothamProMedium.eot?slbepq');
+	src:url('../fonts/GothamPro/GothamProMedium.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro/GothamProMedium.ttf') format('truetype'),
+		url('../fonts/GothamPro/GothamProMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamPro';
+	src:url('../fonts/GothamPro/GothamProLight.eot?slbepq');
+	src:url('../fonts/GothamPro/GothamProLight.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro/GothamProLight.ttf') format('truetype'),
+		url('../fonts/GothamPro/GothamProLight.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamPro';
+	src:url('../fonts/GothamPro/GothamProBold.eot?slbepq');
+	src:url('../fonts/GothamPro/GothamProBold.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro/GothamProBold.ttf') format('truetype'),
+		url('../fonts/GothamPro/GothamProBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamPro';
+	src:url('../fonts/GothamPro/GothamProItalic.eot?slbepq');
+	src:url('../fonts/GothamPro/GothamProItalic.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro/GothamProItalic.ttf') format('truetype'),
+		url('../fonts/GothamPro/GothamProItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'GothamPro';
+	src:url('../fonts/GothamPro/GothamProBoldItalic.eot?slbepq');
+	src:url('../fonts/GothamPro/GothamProBoldItalic.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro/GothamProBoldItalic.ttf') format('truetype'),
+		url('../fonts/GothamPro/GothamProBoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayRegular.eot?slbepq');
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayRegular.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayRegular.ttf') format('truetype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayItalic.eot?slbepq');
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayItalic.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayItalic.ttf') format('truetype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayBold.eot?slbepq');
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayBold.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayBold.ttf') format('truetype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayBoldItalic.eot?slbepq');
+	src:url('../fonts/PlayfairDisplay/PlayfairDisplayBoldItalic.eot?slbepq#iefix') format('embedded-opentype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayBoldItalic.ttf') format('truetype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplayBoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}

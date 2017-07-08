@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+div.container > div.form {
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 100;
+	width : 100%;
+	height : 100%;
+	background-color : rgba(0, 0, 0, 0.5);
+	color : #ffffff;
+	}
+	
+div.container > div.form.show { display : block; }
+div.container > div.form.hide { display : none; }
+
+div.container > div.form.show > form {
+	animation-name : slideDown;
+	animation-duration : 0.25s;
+	animation-iteration-count : 1;
+	}
+
+div.container > div.form > form {
+	position : absolute;
+	z-index : 10;
+	width : 90%;
+	max-width : 480px;
+	background-color : rgba(255, 255, 255, 1);
+	color : rgba(55, 55, 55, 1);
+	}
+	
+div.container > div.form > form > span.header {
+	display : block;
+	width : 100%;
+	padding : 25px 60px;
+	font : 500 20px/20px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	text-align : center;
+	}
+	
+div.container > div.form > form > button {
+	position : absolute;
+	top : 23px;
+	right : 20px;
+	z-index : 10;
+	width : 30px;
+	height : 22px;
+	margin : 0;
+	padding : 0;
+	border : 0;
+	cursor : pointer;
+	background-color : rgba(255, 255, 255, 1);	
+	}
+	
+div.container > div.form > form > button::before,
+div.container > div.form > form > button::after {
+	display : block;
+	position : absolute;
+	left : 0;
+	z-index : inherit;
+	width : 100%;
+	height : 4px;
+	border-radius : 2px;
+	background-color : rgba(55, 55, 55, 0.75);
+	transition : all 0.25s ease;
+	content : '';
+	}
+
+div.container > div.form > form > button:hover::before,
+div.container > div.form > form > button:hover::after { background-color : rgba(55, 55, 55, 1); }
+div.container > div.form > form > button::before { transform : rotate(45deg); }	
+div.container > div.form > form > button::after { transform : rotate(-45deg); }
+
+div.container > div.form > form > div {
+	background-color : rgba(250, 250, 250, 1);
+	color : rgba(55, 55, 55, 1);
+	padding : 20px 40px;
+	}
+	
+div.container > div.form > form > div > div.field { display : none; }
+
+div.container > div.form > form > div > p {
+	margin : 0;
+	padding : 20px 0;
+	font : 500 16px/20px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	text-align : center;
+	display : none;
+	}
+	
+div.container > div.form > form > div > p::after {
+	font : 400 16px/20px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	content : 'Ваша заявка успешно отправлена!'; 
+	}
+
+span.button.callback,
+span.submit { width : 200px; }
+
+span.button,
+span.submit {
+	position : relative;
+	z-index : 1;
+	max-height : 50px;
+	white-space : nowrap;
+	transition : all 0.25s ease;
+	}
+	
+span.button { display : inline-block; }
+
+span.submit {
+	display : block;
+	margin : 25px auto;
+	}
+	
+span.button { 
+	border : 3px solid rgba(188, 188, 188, 1);
+	background-color : rgba(255, 255, 255, 1);
+	color : rgba(188, 188, 188, 1);
+	}
+	
+span.submit {
+	border : 3px solid rgba(218, 218, 218, 1);
+	background-color : rgba(255, 255, 255, 0);
+	color : rgba(255, 255, 255, 1);
+	}
+	
+span.button > button,
+span.submit > button {
+	position : relative;
+	z-index : 3;
+	width : 100%;
+	height : 100%;
+	padding : 0 25px;
+	border : 0;
+	background-color : rgba(255, 255, 255, 0);
+	color : inherit;
+	font : 600 12px/44px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	text-transform : uppercase;
+	transition : all 0.25s ease;
+	}
+ 	
+span.button.active {
+	border : solid 3px rgba(55, 55, 55, 1);
+	color : rgba(55, 55, 55, 1);
+	}
+	
+span.submit.active { 
+	background-color : rgba(218, 218, 218, 0);
+	border : solid 3px rgba(218, 59, 83, 1); 
+	}
+
+span.submit::after { 
+	background-color : rgba(218, 218, 218, 1); 
+	}
+
+span.button.active::after,
+span.submit::after {
+    height : 100%;
+    position : absolute;
+    top : 0;
+    left : 0;
+    z-index : 2;
+    content : ''; 
+    transition : all 0.25s ease;
+	}
+	
+span.button.active::after { 
+	width : 0%; 
+	background-color : rgba(218, 59, 83, 1);
+	}
+	
+span.submit::after { width : 100%; }
+span.submit.active::after { background-color : rgba(218, 59, 83, 1); }
+	
+span.button > button::after,
+span.submit > button::after {
+	position : relative;
+	top : 3px;
+	left : 5px;
+	z-index : 4;
+	font : normal 16px/20px 'moscowhome', Arial, Tahoma, Verdana, sans-serif;
+	content : '\ea42';
+	transition : all 0.25s ease;
+	}
+
+span.button.active > button,
+span.submit.active > button { cursor : pointer; }
+span.button.active > button::after { color : rgba(218, 59, 83, 1); }
+span.submit.active > button::after { color : rgba(255, 255, 255, 1); }
+span.button.active:hover::after { width : 100%; }
+span.submit.active:hover::after { width : 0%; }
+span.button.active:hover { border : solid 3px rgba(218, 59, 83, 1); }
+span.submit.active:hover { border : solid 3px rgba(55, 55, 55, 1); }
+span.button.active:hover > button { color : rgba(255, 255, 255, 1); }
+span.submit.active:hover > button { color : rgba(55, 55, 55, 1); }
+span.button.active:hover > button::after  { color : rgba(255, 255, 255, 1); }
+span.submit.active:hover > button::after  { color : rgba(218, 59, 83, 1); }
+	
+div.input,
+div.textarea {
+	position : relative;
+	background-color : rgba(255, 255, 255, 1);
+	margin : 10px 0;
+	}
+
+div.input { height : 50px; }	
+div.textarea { height : 125px; }
+
+div.input > input[type=text],
+div.textarea > textarea {
+	display : block;
+	position : relative;
+	z-index : 11;
+	width : 100%;
+	height : inherit;
+	border : 2px solid rgba(227, 227, 227, 1);
+	background-color : rgba(255, 255, 255, 0);
+	color : inherit;
+	}
+	
+div.textarea > textarea {
+	padding : 16px 40px 0 10px;
+	font : 400 16px/20px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	resize : none;
+	overflow : hidden;
+	}
+
+div.input > input[type=text] {
+	padding : 15px 40px 0 10px;
+	font : 400 16px/32px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	}
+	
+div.input > span,
+div.textarea > span {
+	display : block;
+	width : 100%;
+	position : absolute;
+	top : 5px;
+	left : 12px;
+	z-index : 10;
+	color : rgba(165, 165, 165, 1);
+	font : 400 16px/40px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	transition : all 0.25s ease;
+	}
+
+div.input > input[type=text]:hover + span,
+div.input > input[type=text]:focus + span,
+div.input > input[type=text] + span.selected,
+div.textarea > textarea:hover + span,
+div.textarea > textarea:focus + span,
+div.textarea > textarea + span.selected { font : 400 12px/14px 'GothamPro', Arial, Tahoma, Verdana, sans-serif; }
+div.input > input[type=text].error { border : 2px solid rgba(230, 95, 95, 1); }
+div.input > input[type=text].success { border : 2px solid rgba(145, 190, 90, 1); }
+
+div.input > input[type=text].require  + span::after {
+	content : ' *';
+	color : rgba(230, 95, 95, 1);
+	}
+
+div.input > input[type=text] + span::before {
+    position : absolute;
+    top : 10px;
+    right : 25px;
+    z-index : 12;
+    font : normal 20px/20px 'moscowhome', Arial, Tahoma, Verdana, sans-serif;	
+	}
+
+div.input > input[type=text].error + span::before {
+    content : '\e923';
+    color : rgba(230, 95, 95, 1);
+    }
+    
+div.input > input[type=text].success + span::before {
+    content : '\e924';
+    color : rgba(145, 190, 90, 1);
+    }
+
+div.input.choose > input[type=text] { cursor : none; }  
+div.input.choose > input[type=text]:hover { cursor : pointer; }
+
+div.input.choose > input[type=text] + span::before {
+    transform : rotate(90deg);
+    content : '\ea42';
+    color : rgba(55, 55, 55, 1);
+	}
+	
+div.input.choose > input[type=text].error + span::before { color : rgba(230, 95, 95, 1); }
+div.input.choose > input[type=text].success + span::before { color : rgba(145, 190, 90, 1); }
+	
+div.container > div.form > div {
+	display : none;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 20;
+	width : 100%;
+	height : 100%;
+	background-color : rgba(0, 0, 0, 0.1);
+	}
+	
+div.container > div.form > div.show { display : block; }
+div.container > div.form > div.hide { display : none; }
+
+div.container > div.form > div.show > ul {
+	animation-name : slideUp;
+	animation-duration : 0.25s;
+	animation-iteration-count : 1;
+	}
+	
+div.container > div.form > div > ul {
+	display : none;
+	position : absolute;
+	z-index : 10;
+	padding : 0;
+	margin : 0;
+	border : solid 2px rgba(188, 188, 188, 1);
+	list-style : none;
+	background-color : rgba(255, 255, 255, 1);
+	color : rgba(188, 188, 188, 1);
+	}
+	
+div.container > div.form > div > ul > li {
+	display : block;
+	position : relative;
+	width : 270px;
+	height : 40px;
+	padding : 0 30px;
+	font: 400 16px/40px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+	white-space : nowrap;
+	transition : all 0.25s ease;
+	}
+	
+div.container > div.form > div > ul > li:before {
+  	position: absolute;
+  	bottom : -1px;
+    left : 20px;
+  	z-index : 10;
+	width : 230px;
+	height : 1px;
+  	background-color : rgba(188, 188, 188, 1);
+  	color : inherit;
+  	content : '';	
+	}
+	
+div.container > div.form > div > ul > li:last-child::before,
+div.container > div.form > div > ul > li:hover::before { background-color : rgba(255, 255, 255, 0) !important; }
+
+div.container > div.form > div > ul > li:hover {
+	background-color : rgba(188, 188, 188, 1);
+	color : rgba(255, 255, 255, 1);	
+	cursor : pointer;
+	}

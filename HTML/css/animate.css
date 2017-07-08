@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.animated {
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode : both;
+	}
+	
+@keyframes slideDown {
+	0% {
+    	transform: translate(0, -25px);
+    	opacity : 0;
+  		}
+  	100% {
+    	transform: translate(0, 0);
+    	opacity : 1;
+  		}
+	}
+	
+@keyframes slideUp {
+	0% {
+    	transform: translate(0, 25px);
+    	opacity : 0;
+  		}
+  	100% {
+    	transform: translate(0, 0);
+    	opacity : 1;
+  		}
+	}

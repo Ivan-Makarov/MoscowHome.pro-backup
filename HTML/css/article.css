@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+article > div.content { padding : 20px 0; }
+
+@media only screen and (min-width : 821px) {
+	article { margin : 0 60px; }
+		
+	article > div.brief { 
+		padding : 10px 0;
+		font : 400 20px/24px 'GothamPro', Arial, Tahoma, Verdana, sans-serif; 
+		}
+		
+	article h1 {
+		font : 600 60px/60px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;	
+		margin : 10px 0 30px 0;
+		text-align : center;
+		}
+	}
+	
+@media only screen and (min-width : 621px) and (max-width : 820px) {
+	article { margin : 0 40px; }
+		
+	article > div.brief { 
+		padding : 10px 0;
+		font : 400 18px/22px 'GothamPro', Arial, Tahoma, Verdana, sans-serif; 
+		}
+		
+	article h1 {
+		font : 600 48px/48px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;	
+		margin : 5px 0 25px 0;
+		text-align : center;
+		}
+	}
+	
+@media only screen and (max-width : 620px) {
+	article { margin : 0 20px; }
+		
+	article > div.brief { 
+		padding : 10px 0;
+		font : 400 16px/20px 'GothamPro', Arial, Tahoma, Verdana, sans-serif; 
+		}
+		
+	article h1 {
+		font : 600 36px/42px 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+		margin : 0 0 20px 0;
+		text-align : center;
+		}
+	}

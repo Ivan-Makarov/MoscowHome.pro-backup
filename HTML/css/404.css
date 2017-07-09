@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.content-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f6f6;
+    padding: 1px;
+}
+
+.content-wrapper .err404 {
+    width: 50%;
+    min-height: 200px;
+    border: 9px solid #ffffff;
+    outline: 12px solid #da3b53;
+    outline-offset: -21px;
+    background-image: url("../img/404.svg");
+    background-size: 90% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+
+.content-wrapper .err404-wrapper {
+    padding: 110px 155px;
+    width: 50%;
+}
+
+.content-wrapper .err404-wrapper--message .error-message--heading {
+    text-transform: uppercase;
+    font: 500 15px/24px "GothamPro", Arial, Tahoma, Verdana, sans-serif;
+}
+
+.content-wrapper .err404-wrapper--message .error-message--text {
+    font: 400 14px/22px "GothamPro", Arial, Tahoma, Verdana, sans-serif;
+}
+
+.content-wrapper .err404-wrapper--message .error-message--discreet {
+    padding-top: 20px;
+    margin-top: 45px;
+    border-top: 1px solid #aabbcc;
+    font: 400 12px/20px "GothamPro", Arial, Tahoma, Verdana, sans-serif;
+    color: #999999;
+}
+
+.content-wrapper a {
+    color: #da3b53;
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+    .content-wrapper .err404-wrapper {
+        padding: 80px 95px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-wrapper .err404 {
+        width: 100%;
+    }
+    .content-wrapper .err404-wrapper {
+        width: 100%;
+        padding: 110px 140px;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 601px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-wrapper .err404 {
+        width: 100%;
+    }
+    .content-wrapper .err404-wrapper {
+        width: 100%;
+        padding: 70px;
+    }
+}
+
+@media only screen and (max-width: 401px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-wrapper .err404 {
+        width: 100%;
+    }
+    .content-wrapper .err404-wrapper {
+        width: 100%;
+        padding: 70px 50px;
+    }
+}

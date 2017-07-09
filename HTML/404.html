@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    	<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0" />
+    	<meta name="keywords" content=""  />
+    	<meta name="description" content ="" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+    	<meta property="og:url" content="" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="img/social.jpg" />
+		<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="36x36" href="favicon/favicon-36x36.png" />
+		<link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon-48x48.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="favicon/favicon-192x192.png" />
+		<link rel="icon" type="image/x-icon" sizes="16x16" href="favicon/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon/favicon.ico" />
+    	<link rel="stylesheet" href="css/default.css?080720171755" type="text/css" />
+    	<link rel="stylesheet" href="css/fonts.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/style.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/forms.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/header.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/nav.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/breadcrumbs.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/article.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/footer.css?080720171755" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css?080720171755" type="text/css" />
+        <link rel="stylesheet" href="css/404.css">
+		<script defer src="js/jquery.js?080720171755" type="text/javascript"></script>
+		<script defer src="js/inputmask.js?080720171755" type="text/javascript"></script>
+		<script defer src="js/base.js?080720171755" type="text/javascript"></script>
+		<title>Moscow Home</title>
+	</head>
+	<body onresize="resize();" onload="resize();">
+		<div class="container">
+			<div class="form hide">
+				<div class="hide">
+					<ul class="animate presentation">
+        				<li>Общая</li>
+            			<li>Строительство</li>
+            			<li>Отделка</li>
+            		</ul>
+					<ul class="animate callback">
+        				<li>не имеет значения</li>
+            			<li>10:00 - 13:00</li>
+            			<li>13:00 - 16:00</li>
+           				<li>16:00 - 19:00</li>
+            		</ul>
+            	</div>
+				<form class="animate" method="post" name="application" action="actions/?action=order" target="actions">
+					<input type="hidden" name="order_type" value="" />
+					<input type="hidden" name="order_name" value="" />
+					<button type="button"></button>
+					<span class="header"></span>
+					<div>
+						<div class="field input choose presentation">
+							<input class="require choose" type="text" name="user_presentation" value="" readonly data-list="presentation" />
+							<span>Тип презентации</span>
+						</div>
+						<div class="field input presentation callback">
+							<input class="require" type="text" name="user_name" value="" />
+							<span>Имя</span>
+						</div>
+						<div class="field input presentation">
+							<input class="require" type="text" name="user_email" value="" />
+							<span>E-mail</span>
+						</div>
+						<div class="field input presentation callback">
+							<input class="require phone" type="text" name="user_phone" value="" />
+							<span>Телефон</span>
+						</div>
+						<div class="field input choose callback">
+							<input class="choose" type="text" name="user_callback" value="" readonly data-list="callback" />
+							<span>Удобное время</span>
+						</div>
+						<div class="field textarea presentation callback">
+							<textarea name="user_message"></textarea>
+							<span>Комментарий</span>
+						</div>
+						<p></p>
+					</div>
+					<span class="submit">
+						<button type="button">Отправить заявку</button>
+					</span>
+				</form>
+			</div>
+			<header>
+				<a class="logo" href="/" title="Moscow Home"></a>
+				<a class="phone" href="tel:+74957629966" title="8 495 762-99-66">8 495 762-99-66</a>
+				<ul class="sandwich close">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</header>
+			<nav class="close">
+				<ul>
+					<li class="rotate">
+						<div></div>
+						<a href="" title="Реализованные проекты">
+							<span>Реализованные проекты</span>
+							<div></div>
+						</a>
+						<ul>
+							<li>
+								<a href="" title="Дома">Дома</a>
+							</li>
+							<li>
+								<a href="" title="Отделка">Отделка</a>
+							</li>
+							<li>
+								<a href="" title="Ландшафт">Ландшафт</a>
+							</li>
+							<li>
+								<a href="" title="Комплексная застройка">Комплексная застройка</a>
+							</li>
+						</ul>
+					</li>
+					<li class="rotate">
+						<div></div>
+						<a href="" title="Услуги">
+							<span>Услуги</span>
+							<div></div>
+						</a>
+						<ul>
+							<li>
+								<a href="" title="Строительство">Строительство</a>
+							</li>
+							<li>
+								<a href="" title="Отделка">Отделка</a>
+							</li>
+							<li>
+								<a href="" title="Ландшафтные работы">Ландшафтные работы</a>
+							</li>
+							<li>
+								<a href="" title="Инженерные системы">Инженерные системы</a>
+							</li>
+							<li>
+								<a href="" title="Проектирование">Проектирование</a>
+							</li>
+							<li>
+								<a href="" title="Застройка поселков">Застройка поселков</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="" title="Компания">
+							<span>Компания</span>
+						</a>
+					</li>
+					<li>
+						<a href="" title="Контакты">
+							<span>Контакты</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="/" title="Moscow Home">Moscow Home</a>
+					</li>
+					<li>
+						<a href="" title="Услуги">Услуги</a>
+					</li>
+					<li>
+						<a href="" title="Ландшафтные работы">Ландшафтные работы</a>
+					</li>
+				</ul>
+			</div>
+			<article>
+				<div class="brief">
+					<h1>Страница не найдена</h1>
+					<!-- <p>Съешь ещё этих мягких французских булок, да выпей же чаю
+					Съешь ещё этих мягких французских булок, да выпей же чаю
+					Съешь ещё этих мягких французских булок, да выпей же чаю
+					Съешь ещё этих мягких французских булок, да выпей же чаю
+					Съешь ещё этих мягких французских булок, да выпей же чаю</p> -->
+				</div>
+				<!-- начало контента -->
+				<div class="content">
+
+                    <div class="content-wrapper">
+                        <div class="err404">
+
+                        </div>
+                        <div class="err404-wrapper">
+                            <div class="err404-wrapper--message">
+                                <h2 class="error-message--heading">Ой, Что-то пошло не так...</h2>
+                                <p class="error-message--text">К сожалению, страница сайта, которую вы запрашиваете, не найдена в нашей базе данных. Возможно, вы неправильно ввели URL-адрес страницы или попали на битую ссылку.</p>
+                                <p class="error-message--text">Вернитесь <a href="#" onclick="history.back();" title="Назад">назад</a> или перейдите на <a href="" title="На главную">главную страницу</a>.</p>
+                                <p class="error-message--discreet">Если это произошло по нашей вине, пожалуйста, <a href="" title="Сообщить нам">сообщите нам</a> об этом, указав адрес, с которого вы сюда попали</p>
+                            </div>
+                        </div>
+                    </div>
+
+				</div>
+				<!-- конец контента -->
+			</article>
+			<footer>
+				<div class="copyright">
+					<span>© 2002–2017 Moscow Home</span>
+					<span>
+						<a href="mailto:zayavka@moscowhome.pro" title="zayavka@moscowhome.pro">zayavka@moscowhome.pro</a>
+					</span>
+					<span class="callback button active" data-form="callback" data-name="Заявка на звонок">
+						<button type="button">Заказать звонок</button>
+					</span>
+					<ul>
+						<li>
+							<a href="#" title="facebook" target="_blank"></a>
+						</li>
+						<li>
+							<a href="#" title="twitter" target="_blank"></a>
+						</li>
+						<li>
+							<a href="#" title="instagram" target="_blank"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer">
+					<ul>
+						<li>
+							<p>Строительство элитных загородных&nbsp;домов<p>
+							<p>МО, 11&nbsp;км&nbsp;Рублёво-Успенского&nbsp;шоссе, д.&nbsp;Усово, НПИЗ&nbsp;«Счастливый&nbsp;дом»,&nbsp;д.&nbsp;1</p>
+							<p>Разработка&nbsp;сайта&nbsp;<a class="developer" href="http://mediawaves.ru/" title="MediaWaves" target="_blank"></a></p>
+						</li>
+						<li>
+							<ul>
+								<li>
+									<a href="" title="Реализованные проекты">Реализованные проекты</a>
+								</li>
+								<li>
+									<a href="" title="Услуги">Услуги</a>
+								</li>
+								<li>
+									<a href="" title="Компания">Компания</a>
+								</li>
+								<li>
+									<a href="" title="Контакты">Контакты</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<span>Презентация работ</span>
+					<ul class="presentation">
+						<li>
+							<div class="input dialog">
+								<input class="require" type="text" data-button="dialog" name="user_name" value="" />
+								<span>Имя</span>
+							</div>
+							<div class="input dialog">
+								<input class="require" type="text" data-button="dialog" name="user_email" value="" />
+								<span>E-mail</span>
+							</div>
+						</li>
+						<li>
+							<span class="dialog button" data-form="presentation" data-name="Заявка на презентацию">
+								<button type="button">Заказать презентацию</button>
+							</span>
+						</li>
+					</ul>
+					<div>
+						<span>Строительство и отделка элитных&nbsp;домов</span>
+						<p>Строительная компания Moscow Home уже более пятнадцати лет занимается строительством элитной недвижимости в престижных районах Московской области.
+						Уже долгие годы благодаря безупречной репутации компания пользуется доверием клиентов.
+						Большой опыт позволяет нам осуществлять строительство домов любой сложности.
+						Большая часть объектов возводится с заказчиками, пришедшими по рекомендации или повторно для нового строительства, ремонта или модернизации уже построенных домов.
+						Задачи компании Moscow Home — это качественное преобразование существующих или создание новых объектов в соответствии с запросами Заказчика.
+						Индивидуальный подход делает возможным выполнение любых проектных решений.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<iframe id="actions" name="actions"></iframe>
+	</body>
+</html>

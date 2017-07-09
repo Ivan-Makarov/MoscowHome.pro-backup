@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+$red: #da3b53;
+$gray: #f5f6f6;
+@mixin font($w, $s, $lh) {
+    font: $w #{$s}/#{$lh} 'GothamPro', Arial, Tahoma, Verdana, sans-serif;
+}
+
+.content-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    background-color: $gray;
+    padding: 1px;
+    .err404 {
+        width: 50%;
+        min-height: 200px;
+        border: 9px solid #ffffff;
+        outline: 12px solid $red;
+        outline-offset: -21px;
+        background-image: url('../img/404.svg');
+        background-size: 90% 75%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffffff;
+    }
+
+    .err404-wrapper {
+        padding: 110px 155px;
+        width: 50%;
+        &--message {
+            .error-message {
+                &--heading {
+                    text-transform: uppercase;
+                    @include font(500, 15px, 24px);
+                }
+                &--text {
+                    @include font(400, 14px, 22px);
+                }
+                &--discreet {
+                    padding-top: 20px;
+                    margin-top: 45px;
+                    border-top: 1px solid #aabbcc;
+                    @include font(400, 12px, 20px);
+                    color: #999999;
+                }
+            }
+        }
+    }
+    a {
+        color: $red;
+    }
+}
+
+@media only screen and (min-width: 1301px) {
+
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+    .content-wrapper {
+        .err404-wrapper {
+            padding: 80px 95px;
+        }
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .content-wrapper {
+        flex-direction: column;
+        .err404 {
+            width: 100%;
+        }
+        .err404-wrapper {
+            width: 100%;
+            padding: 110px 140px;
+        }
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 601px) {
+    .content-wrapper {
+        flex-direction: column;
+        .err404 {
+            width: 100%;
+        }
+        .err404-wrapper {
+            width: 100%;
+            padding: 70px;
+        }
+    }
+}
+
+@media only screen and (max-width: 401px) {
+    .content-wrapper {
+        flex-direction: column;
+        .err404 {
+            width: 100%;
+        }
+        .err404-wrapper {
+            width: 100%;
+            padding: 70px 50px;
+        }
+    }
+}
